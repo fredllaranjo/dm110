@@ -1,6 +1,14 @@
 # dm110
 Trabalho de conclusão Desenvolvimento JavaEE - DM110 - PÓS-GRADUAÇÃO EM DESENVOLVIMENTO DE APLICAÇÕES PARA DISPOSITIVOS MÓVEIS E CLOUD COMPUTING
 
+## Detalhes da aplicação:
+*Datasource:
+  * Nome:poller
+  * JNDI:java:/PollerDS
+*Fila:
+  * Nome:DM110_Poller_Queue
+  * JNDI:java:/jms/queue/dm110pollerqueue
+
 ## Detalhes da interface REST:
 
 ### Comando de início de varredura:
