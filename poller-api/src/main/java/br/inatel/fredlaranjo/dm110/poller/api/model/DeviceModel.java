@@ -4,6 +4,11 @@ import java.io.Serializable;
 
 public class DeviceModel implements Serializable {
 
+	public DeviceModel(String ip, DeviceStatus status) {
+		this.ip = ip;
+		this.status = status;
+	}
+
 	private static final long serialVersionUID = 5430511629618442353L;
 	private String ip;
 	private DeviceStatus status;
