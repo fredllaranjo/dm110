@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Poller</title>
+</head>
+<body>
+	<h1>Poller</h1>
+	<h2>Poll Ips</h2>
+	<form action="rest/poller/start/{IP}/{MASK}" method="GET">
+		<label>IP:</label>
+		<input type="text" name="IP">
+		<label>Mask:</label>
+		<input type="number" name="MASK">
+		<input type="submit" value="Poll">
+	</form>
+	<h2>Ip Status</h2>
+	<form action="rest/poller/status/{IP}" method="GET">
+		<label>IP:</label>
+		<input type="text" name="IP">
+		<input type="submit" value="Status">
+	</form>
+</body>
+</html>
