@@ -6,7 +6,11 @@ import br.inatel.fredlaranjo.dm110.poller.ejb.entity.Device;
 public class DeviceConverter {
 
 	public DeviceModel convertToDeviceModel(Device device) {
-		return new DeviceModel(device.getIp(), device.getStatus());
+		DeviceModel deviceModel = null;
+		if (device != null) {
+			deviceModel = new DeviceModel(device.getIp(), device.getStatus());
+		}
+		return deviceModel;
 	}
 
 }

@@ -1,7 +1,6 @@
 package br.inatel.fredlaranjo.dm110.poller.ejb.dao;
 
 import javax.ejb.Stateless;
-import javax.persistence.EntityExistsException;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -14,15 +13,11 @@ public class PollerDAO {
 	private EntityManager em;
 
 	public Device getStatus(String ip) {
-		return em.createQuery("from device_status ds where ip = " + ip, Device.class).getSingleResult();
+		return em.find(Device.class, ip);
 	}
 
 	public void insert(Device device) {
-		try {
-			em.persist(device);
-		} catch (EntityExistsException ex) {
-			em.merge(device);
-		}
+		em.merge(device);
 	}
 
 }

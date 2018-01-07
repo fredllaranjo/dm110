@@ -18,7 +18,7 @@ public interface PollerService {
 
 	@GET
 	@Path("/status/{IP}")
-	@Produces(MediaType.TEXT_PLAIN)
+	@Produces(MediaType.APPLICATION_JSON)
 	DeviceModel getDeviceStatus(@PathParam("IP") String ip);
 
 }
