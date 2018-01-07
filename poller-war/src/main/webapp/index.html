@@ -7,17 +7,17 @@
 <body>
 	<h1>Poller</h1>
 	<h2>Poll Ips</h2>
-	<form action="rest/poller/start/{IP}/{MASK}" method="GET">
+	<form action="rest/poller/start/{ip}/{mask}" method="GET">
 		<label>IP:</label>
-		<input type="text" name="IP">
+		<input type="text" name="ip">
 		<label>Mask:</label>
-		<input type="number" name="MASK">
+		<input type="number" name="mask">
 		<input type="submit" value="Poll">
 	</form>
 	<h2>Ip Status</h2>
-	<form action="rest/poller/status/{IP}" method="GET">
+	<form action="rest/poller/status/{ip}" method="GET">
 		<label>IP:</label>
-		<input type="text" name="IP">
+		<input type="text" name="ip">
 		<input type="submit" value="Status">
 	</form>
 </body>

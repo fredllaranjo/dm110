@@ -5,7 +5,7 @@ CREATE DATABASE "dm110-poller"
     CONNECTION LIMIT = -1;
 
 CREATE TABLE device_status (
-	ip varchar(11) NOT NULL,
+	ip varchar(15) NOT NULL,
     status varchar(8) NOT NULL,
     CONSTRAINT pk_device_status PRIMARY KEY (ip)
 );
